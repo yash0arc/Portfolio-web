@@ -1,7 +1,7 @@
 import "./resume.css";
 function Resume() {
   const handleDownload = () => {
-    window.open("/public/yashwanthsaianumula_resume.pdf", "_blank");
+    window.open("/yashwanthsaianumula_resume.pdf", "_blank");
   };
   return (
     <div className="resume">
