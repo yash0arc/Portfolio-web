@@ -1,0 +1,43 @@
+.background {
+  background: url("./assets/background.png");
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Needed for absolute children */
+}
+
+.box {
+  height: 450px;
+  width: 800px;
+  opacity: 0.8;
+}
+
+.contact {
+    font-family: pixeloid;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center over the image */
+  color: white; /* Optional: make text readable over image */
+  font-size: 23px;
+  text-align: center;
+}
+.headings{
+    display:inline;
+    color:#78B9B5;
+}
+
+.links{
+    
+    color:#FFF9E5;
+}
+
+.numlink{
+    text-decoration: none;
+    color:#FFF9E5;
+}

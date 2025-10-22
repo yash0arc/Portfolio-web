@@ -1,0 +1,121 @@
+@font-face {
+  font-family: pixeloid;
+  src: url(./fonts/PixeloidSans-mLxMm.ttf);
+}
+
+.projectbtnnames {
+  font-family: pixeloid;
+  color: #546368;
+  font-size: 14px;
+  position: relative;
+  top: -35px;
+}
+
+.projectbtn {
+  width: 160px;
+  height: 50px;
+  background-color: #546368;
+  border: none;
+}
+
+.projectbtnblock {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  top: 250px;
+  left: 190px;
+}
+
+.backimg {
+  height: 100vh;
+  width: 100%;
+  opacity: 0.7;
+}
+.leftimg {
+  opacity: 0.9;
+  position: absolute;
+  top: 150px;
+  left: 140px;
+  width: 270px;
+  height: 430px;
+}
+.rightimg {
+  opacity: 0.9;
+  position: absolute;
+  top: 150px;
+  right: 130px;
+  width: 800px;
+  height: 430px;
+}
+.projecttittle {
+  font-family: pixeloid;
+  font-size: 33px;
+  position: absolute;
+  top: 195px;
+  left: 195px;
+  color: #383338;
+}
+.syn {
+  font-family: pixeloid;
+  font-size: 30px;
+  position: absolute;
+  top: 200px;
+  left: 630px;
+  color: #78B9B5;
+}
+.aboutproj {
+  font-family: pixeloid;
+  font-size: 19px;
+  position: absolute;
+  top: 245px;
+  left: 630px;
+  width: 670px;
+  color: #FFF9E5;
+}
+.githubtittle {
+  font-family: pixeloid;
+  font-size: 28px;
+  position: absolute;
+  top: 410px;
+  left: 630px;
+  color: #78B9B5;
+}
+
+/* New flex container for GitHub & Live buttons */
+.link-buttons {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  top: 470px;
+  left: 630px;
+}
+
+.githubbtn {
+  /* Remove absolute positioning */
+  /* position: absolute;
+  top: 470px;
+  left: 870px; */
+
+  width: 180px;
+  height: 50px;
+  box-shadow: 10px 10px 0px #26312f;
+  font-size: 24px;
+  background: #98afab;
+  color: #FFF9E5;
+  font-family: pixeloid;
+}
+
+.githubbtn:active {
+  transform: translate(5px, 5px);
+  box-shadow: none;
+}
+
+/* Flex container to center buttons horizontally */
+.link-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 6rem; /* space between buttons */
+  margin-left:6rem;
+}
+

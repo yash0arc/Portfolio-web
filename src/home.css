@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Qwitcher+Grypen:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap");
+@font-face {
+  font-family: bitfont;
+  src: url("./fonts/pixelfont.otf") format("opentype");
+}
+@font-face {
+  font-family: pixeloid;
+  src: url(./fonts/PixeloidSans-mLxMm.ttf);
+}
+@font-face {
+  font-family: bigpixeloid;
+  src: url(./fonts/bitArcadeIn.ttf);
+}
+.img1 {
+  height: 1450px;
+  width: 99vw;
+  opacity: 0.8;
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.text {
+  color: #006bff;
+  position: absolute;
+  top: 13%;
+  left: 2%;
+  font-family: "bitfont", sans-serif;
+  font-weight: 900;
+  font-size: 140px;
+}
+
+.text1 {
+  color: #006bff;
+  position: absolute;
+  top: 27%;
+  left: 2%;
+  font-family: "bitfont", sans-serif;
+  font-weight: 900;
+  font-size: 140px;
+}
+.text2 {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  font-family: "bitfont", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  color: #b99470;
+}
+.text3 {
+  position: absolute;
+  top: 56%;
+  left: 2%;
+  font-family: "bitfont", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  color: #b99470;
+}
+
+.button1 {
+  position: absolute; 
+  top: 800px;
+  left: 45%;
+  height: auto;
+  width: 183px;
+}
+
+.text4{
+  font-family: pixeloid;
+  position: absolute;
+  font-size: 26px;
+  top: 845px;
+  left: 47%;
+  color: white;
+}
+
+.button2 {
+  position: absolute; 
+  top: 900px;
+  left: 45%;
+  height: auto;
+  width: 183px;
+}
+
+.text5{
+  font-family: pixeloid;
+  position: absolute;
+  font-size: 26px;
+  top: 945px;
+  left: 47%;
+  color: white;
+}
+
+.button3 {
+  position: absolute; 
+  top: 1000px;
+  left: 45%;
+  height: auto;
+  width: 183px;
+}
+
+.text6{
+  font-family: pixeloid;
+  position: absolute;
+  font-size: 26px;
+  top: 1045px;
+  left: 47.5%;
+  color: white;
+}
+
+.maintext{
+  font-family: bigpixeloid;
+  font-size: 100px;
+  color:yellow;
+  position: absolute; 
+  top: 670px;
+  left:37%;
+
+}
+
+
+
+
+/* for the mobile version */
+
+/* Pixel CRT mobile warning screen */
+.mobile-screen {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  color: #00ffcc;
+  font-family: "bitfont", monospace;
+  animation: flicker 2s infinite alternate;
+}
+
+.mobile-container {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+.pixel-title {
+  font-size: clamp(60px, 8vw, 120px);
+  text-shadow: 0 0 15px #00ffff, 0 0 25px #00ffff;
+  margin-bottom: 20px;
+}
+
+.pixel-text {
+  font-size: clamp(28px, 4vw, 50px);
+  color: #00ccff;
+  text-shadow: 0 0 10px #00aaff;
+}
+
+.pixel-sub {
+  font-size: clamp(20px, 3vw, 40px);
+  color: #ffcc66;
+  margin-top: 10px;
+  text-shadow: 0 0 8px #ffaa00;
+}
+
+/* CRT Scanline effect */
+.crt-lines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 255, 255, 0.05),
+    rgba(0, 255, 255, 0.05) 2px,
+    transparent 3px,
+    transparent 4px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Soft glow overlay */
+.crt-glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 255, 200, 0.05), transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* CRT Flicker Animation */
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.8;
+  }
+}

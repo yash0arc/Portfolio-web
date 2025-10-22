@@ -1,0 +1,23 @@
+.resume {
+  background-image: url("./assets/background.png");
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resumebtn {
+  height: 100px;
+  font-family: pixeloid;
+  width: 300px; 
+  font-size: 35px;
+  background: #98afab;
+  color: #FFF9E5;
+  box-shadow: 10px 10px  #26312f;
+  
+}
+
+.resumebtn:active{
+    transform: translate(10px, 10px);
+    box-shadow: none;
+}
